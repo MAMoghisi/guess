@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html  xml:lang="en" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>guess my number</title>
+    <link rel="stylesheet" href="css/csscodes.css">
+</head>
+<body>
+
+    <div class="base">
+        <div class="child">
+        <input readonly="readonly" class="non-background" type="password" id="number"/>
+            <label for="number">:عدد در نظر گرفته شده</label>
+        </div>
+        <div class="child">
+            <progress max="100" value="100" id="score"></progress>
+            <label for="score">:امتیاز شما</label>
+        </div>
+        <input class="child" type="submit" onclick="help()" value="راهنما" id="help"/>
+        <div class="child help" id="helper">
+            <p>: نوع راهنمایی را انتخاب کنید</p>
+            <input class="right" type="submit" onclick="rightnum()" value="رقم سمت راست">
+            <input type="submit" onclick="plus()" value="مجموع اعداد">
+            <input type="submit" onclick="evenodd()" value="زوج یا فرد">
+        </div>
+        <div class="child">
+        <input type="text" maxlength="3" id="guess" class="guess">
+            <label for="guess">حدس شما</label>
+        </div>
+        <input class="child" onclick="check()" type="submit" value="بررسی">
+        <div class="child">
+            <input class="child non-background" readonly type="text" id="result">
+            <label for="result">:نتیجه</label>
+        </div>
+        <div class="starters">
+            <input id="start" type="submit" onclick="start()" value="شروع بازی">
+            <input class="again" type="submit" onclick="again()" id="again" value="از نو">
+        </div>
+        <input onclick="howplay()" class="starters" type="submit" value="نحوه ی بازی">
+    </div>
+    <script src="js/jscodes.js"></script>
+</body>
+</html>

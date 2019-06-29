@@ -1,0 +1,33 @@
+
+body{
+    text-align: center;
+}
+.base{
+    background: aquamarine;
+    width: 500px;
+    height: 340px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+.child{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.non-background{
+    border-style: unset;
+    background: inherit;
+}
+.help{
+    display: none;
+}
+.starters{
+    position: absolute;
+    top: 340px;
+}
+.again{
+    display: none;
+}
+.guess{
+    border: outset;
+}
